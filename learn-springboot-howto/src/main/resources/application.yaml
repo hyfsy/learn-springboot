@@ -1,0 +1,6 @@
+#debug: true
+server:
+  forward-headers-strategy: framework
+logging:
+  level:
+    org.springframework.boot.loader: debug

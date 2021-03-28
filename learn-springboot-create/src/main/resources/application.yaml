@@ -1,0 +1,15 @@
+server:
+  port: 8088
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+    jolokia:
+      config:
+        debug: true
+  server:
+    port: 8081 # 端口不一样，会再开一个端口
+info:
+  app:
+    java:
+      source: 1.8
