@@ -16,7 +16,7 @@ public class CommandExecutable implements Executable<String> {
 
 
 
-    private String command = "ls /";
+    private String command = "/bin/sh -c ls /";
 
     public CommandExecutable() {
     }

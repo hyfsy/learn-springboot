@@ -3,7 +3,6 @@ package com.hyf.hello.execute;
 import com.hyf.hotrefresh.common.util.ReflectionUtils;
 import com.hyf.hotrefresh.core.util.Util;
 import com.hyf.hotrefresh.plugin.execute.Executable;
-import org.springframework.web.servlet.DispatcherServlet;
 
 /**
  * @author baB_hyf
