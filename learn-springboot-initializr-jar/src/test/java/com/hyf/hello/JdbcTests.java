@@ -28,4 +28,9 @@ class JdbcTests {
         txService.aaa();
     }
 
+    @Test
+    void testNestedTransaction() {
+        txService.ccc();
+    }
+
 }

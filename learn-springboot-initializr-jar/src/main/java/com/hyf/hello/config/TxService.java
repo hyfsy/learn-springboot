@@ -44,4 +44,20 @@ public class TxService {
         jdbcTemplate.execute("insert t1 (id, name) values (0, '" + UUID.randomUUID().toString() + "')");
         throw new RuntimeException("bbb");
     }
+
+    @Transactional(rollbackFor = Exception.class)
+    public void ccc() {
+        try {
+            txService.ddd();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        jdbcTemplate.execute("insert t1 (name) values ('" + UUID.randomUUID().toString() + "')");
+    }
+
+    @Transactional(rollbackFor = Exception.class, propagation = Propagation.REQUIRES_NEW)
+    public void ddd() {
+        jdbcTemplate.execute("insert t1 (id, name) values (9999, '" + UUID.randomUUID().toString() + "')");
+        throw new RuntimeException("test exception");
+    }
 }
