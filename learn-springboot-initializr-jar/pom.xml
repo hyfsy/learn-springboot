@@ -21,8 +21,8 @@
     <dependencies>
         <dependency>
             <groupId>io.github.hyfsy</groupId>
-            <artifactId>hot-refresh-server</artifactId>
-            <version>1.2.4</version>
+            <artifactId>hot-refresh-server-all</artifactId>
+            <version>1.2.5</version>
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>

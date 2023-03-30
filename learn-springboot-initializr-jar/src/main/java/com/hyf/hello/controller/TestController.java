@@ -47,6 +47,11 @@ public class TestController {
         return false;
     }
 
+    // @RequestMapping("3")
+    // public int _3(String s) {
+    //     return 999;
+    // }
+
     @RequestMapping("5")
     public void _5(HttpServletResponse response) {
         Cookie cookie = new Cookie("hyf", "test");
